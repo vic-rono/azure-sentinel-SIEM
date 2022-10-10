@@ -1,5 +1,5 @@
 ﻿
-$API_KEY      = "24f8e8b84d274b49992d99cf3792ac3d"
+$API_KEY      = "your api key from https://ipgeolocation.io"
 $LOGFILE_NAME = "failed_exp.log"
 $LOGFILE_PATH = "C:\ProgramData\$($LOGFILE_NAME)"
 
