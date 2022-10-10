@@ -1,0 +1,76 @@
+{
+    "name": "honeypot-vm",
+    "id": "/subscriptions/c8501f33-1a95-488d-952e-47/resourceGroups/honeypot-vm_group/providers/Microsoft.Compute/virtualMachines/honeypot-vm",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "westeurope",
+    "properties": {
+        "vmId": "ea4631-674-453-8079-337",
+        "hardwareProfile": {
+            "vmSize": "Standard_D2s_v3"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsDesktop",
+                "offer": "Windows-10",
+                "sku": "win10-21h2-pro-g2",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "honeypot-vm_OsDisk_1_98c38f0899a24de984784b884c93b148",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS",
+                    "id": "/subscriptions/c85f33-1a95-488d-952e-4d2c7e47/resourceGroups/honeypot-vm_group/providers/Microsoft.Compute/disks/honeypot-vm_OsDisk_1_98c38f0899a24de984784b884c93b148"
+                },
+                "diskSizeGB": 127
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "honeypot-vm",
+            "adminUsername": "vicadmin",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/c8f33-1a95-488d-952e-4d1947/resourceGroups/honeypot-vm_group/providers/Microsoft.Network/networkInterfaces/honeypot-vm147",
+                    "properties": {
+                        "deleteOption": "Detach"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "licenseType": "Windows_Client",
+        "provisioningState": "Succeeded"
+    },
+    "resources": [
+        {
+            "name": "MicrosoftMonitoringAgent",
+            "id": "/subscriptions/c8501f33-1a95-488d-952e-4d19542c7e47/resourceGroups/honeypot-vm_group/providers/Microsoft.Compute/virtualMachines/honeypot-vm/extensions/MicrosoftMonitoringAgent",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westeurope",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.EnterpriseCloud.Monitoring",
+                "type": "MicrosoftMonitoringAgent",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "workspaceId": "c626fbbf-f817-4b96-8ff9-0e56f5f3a3af"
+                }
+            }
+        }
+    ]
+}
