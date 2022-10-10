@@ -8,7 +8,7 @@ The project is a basis for identifying and defending against attacks persistent 
 
 ## 1. Configuring the honey-pot Windows 10 virtual machine
 
-![honey-pot vm](https://user-images.githubusercontent.com/61822296/194932594-a96defe9-e502-4414-ac64-3dbf9368e6fe.png)
+![honey-pot vm](https://user-images.githubusercontent.com/61822296/194932594-a96defe9-e502-4414-ac64-3dbf9368e6fe.png)<br>
 
 ## 2. Creating a log analytics workspace to monitor logs from the event-viewer from the Windows 10 Virtual Machine
 
